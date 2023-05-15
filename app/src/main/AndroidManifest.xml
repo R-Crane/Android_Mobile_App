@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.RCJ_C196"
+        tools:targetApi="31">
+        <receiver
+            android:name=".activities.Courses.MyReceiver"
+            android:enabled="true"
+            android:exported="true"></receiver>
+        <activity
+            android:name=".activities.Courses.notes"
+            android:exported="false"
+            android:label="Notes"
+            android:parentActivityName=".activities.Assessments.AssessmentList"/>
+        <activity
+            android:name=".activities.Assessments.addAssessment"
+            android:exported="false"
+            android:label="Add Assessment"
+            android:parentActivityName=".activities.Assessments.AssessmentList" />
+        <activity
+            android:name=".activities.Assessments.detailAssessment"
+            android:exported="false"
+            android:label="Assessment Details"
+            android:parentActivityName=".activities.Assessments.AssessmentList" />
+        <activity
+            android:name=".activities.Courses.addCourse"
+            android:exported="false"
+            android:label="Add Course"
+            android:parentActivityName=".activities.Courses.addCourse" />
+        <activity
+            android:name=".activities.Courses.detailCourse"
+            android:exported="false"
+            android:label="Course Details"
+            android:parentActivityName=".activities.Courses.CourseList" />
+        <activity
+            android:name=".activities.Terms.addTerm"
+            android:exported="false"
+            android:label="Add Term"
+            android:parentActivityName=".activities.Terms.TermList" />
+        <activity
+            android:name=".activities.Terms.detailTerm"
+            android:exported="false"
+            android:label="Term Details"
+            android:parentActivityName=".activities.Terms.TermList" />
+        <activity
+            android:name=".activities.Assessments.AssessmentList"
+            android:exported="false"
+            android:label="Assessment List"
+            android:parentActivityName=".activities.MainActivity" />
+        <activity
+            android:name=".activities.Courses.CourseList"
+            android:exported="false"
+            android:label="Course List"
+            android:parentActivityName=".activities.MainActivity" />
+        <activity
+            android:name=".activities.Terms.TermList"
+            android:exported="false"
+            android:label="Term List"
+            android:parentActivityName=".activities.MainActivity" />
+        <activity
+            android:name=".activities.MainActivity"
+            android:exported="true"
+            android:label="Home - C196.RCJ">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

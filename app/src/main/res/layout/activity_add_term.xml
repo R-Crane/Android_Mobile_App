@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.Terms.addTerm">
+
+    <Button
+        android:id="@+id/saveTerm"
+        android:layout_width="174dp"
+        android:layout_height="57dp"
+        android:layout_marginStart="214dp"
+        android:layout_marginTop="348dp"
+        android:layout_marginEnd="23dp"
+        android:layout_marginBottom="19dp"
+        android:text="Save Term"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/addTermEnd"
+        app:layout_constraintVertical_bias="0.888" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="114dp"
+        android:layout_height="59dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="36dp"
+        android:text="Enter Term Name"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toTopOf="@+id/textView5"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/addTermEnd"
+        android:layout_width="219dp"
+        android:layout_height="76dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="16dp"
+        android:ems="10"
+        android:hint="Enter End Date Here"
+        android:inputType="date"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/addTermStart" />
+
+    <EditText
+        android:id="@+id/addTermStart"
+        android:layout_width="218dp"
+        android:layout_height="68dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="17dp"
+        android:ems="10"
+        android:hint="Enter Start Date Here"
+        android:inputType="date"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/addTermName" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="120dp"
+        android:layout_height="67dp"
+        android:layout_marginStart="13dp"
+        android:layout_marginEnd="43dp"
+        android:layout_marginBottom="305dp"
+        android:text="Enter Term End"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/addTermEnd"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/addTermName"
+        android:layout_width="213dp"
+        android:layout_height="67dp"
+        android:layout_marginStart="46dp"
+        android:layout_marginTop="170dp"
+        android:layout_marginEnd="22dp"
+        android:layout_marginBottom="25dp"
+        android:ems="10"
+        android:hint="Enter Term Name Here"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/addTermStart"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView4"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="121dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="39dp"
+        android:layout_marginBottom="28dp"
+        android:text="Enter Term Start"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toTopOf="@+id/textView6"
+        app:layout_constraintEnd_toStartOf="@+id/addTermStart"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
