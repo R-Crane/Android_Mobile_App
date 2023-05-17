@@ -10,7 +10,7 @@
         android:id="@+id/textView"
         android:layout_width="324dp"
         android:layout_height="82dp"
-        android:text="C196 Application -        Riley Crane-Jio"
+        android:text="Mobile Application"
         android:textAlignment="center"
         android:textSize="34sp"
         android:textStyle="bold"
